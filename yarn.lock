@@ -1332,6 +1332,14 @@
   dependencies:
     "defu" "^3.2.2"
 
+"@nuxtjs/gtm@^2.4.0":
+  "integrity" "sha512-Of5KuBBFwRjyJ6AuRrIQsh8J6ksIN2UegJDE8nBiTAanbwQBsAJ0hZibV9SjhKdGvGvWpbShQ4yR2bmQgY6XKA=="
+  "resolved" "https://registry.npmjs.org/@nuxtjs/gtm/-/gtm-2.4.0.tgz"
+  "version" "2.4.0"
+  dependencies:
+    "chalk" "^4.1.0"
+    "semver" "^7.3.2"
+
 "@nuxtjs/proxy@^2.1.0":
   "integrity" "sha512-/qtoeqXgZ4Mg6LRg/gDUZQrFpOlOdHrol/vQYMnKu3aN3bP90UfOUB3QSDghUUK7OISAJ0xp8Ld78aHyCTcKCQ=="
   "resolved" "https://registry.npmjs.org/@nuxtjs/proxy/-/proxy-2.1.0.tgz"

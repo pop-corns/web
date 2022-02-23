@@ -9,6 +9,15 @@
 <script>
 import { createClient } from "~/plugins/contentful.js";
 const client = createClient();
+
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag("js", new Date());
+
+gtag("config", "G-KJVDY1VBPB");
+
 export default {
   data() {
     return {

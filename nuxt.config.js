@@ -55,7 +55,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxtjs/device',
+    '@nuxtjs/device'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -75,6 +75,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    vendor: ["~/assets/js/owl-carousel.js", "~/assets/js/imagesloaded.js"]
+    vendor: ["~/assets/js/owl-carousel.js", "~/assets/js/imagesloaded.js", "https://www.googletagmanager.com/gtag/js?id=G-KJVDY1VBPB"]
   }
 }
