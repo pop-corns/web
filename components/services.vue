@@ -21,6 +21,7 @@ Popcorns empower product people by helping them focus on the problems worth solv
           v-for="(service, index) in services"
           :key="index"
           style="z-index: 1"
+          :style="$device.isMobile ? `padding-bottom : 20px`: ''"
           class="col-lg-3 animate__faster"
           :class="[animation, `animate__delay-${index * 1}s`]"
         >

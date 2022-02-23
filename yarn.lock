@@ -1325,6 +1325,13 @@
     "consola" "^2.15.3"
     "defu" "^5.0.0"
 
+"@nuxtjs/device@^2.1.0":
+  "integrity" "sha512-TYBdt1w2bmCCWp+MhgcBATZtqyUBi3nSdNpcLGILw5USLwCsC/yZtIkq9YisuEzuRnod9w/RZpoE80MxLftEuA=="
+  "resolved" "https://registry.npmjs.org/@nuxtjs/device/-/device-2.1.0.tgz"
+  "version" "2.1.0"
+  dependencies:
+    "defu" "^3.2.2"
+
 "@nuxtjs/proxy@^2.1.0":
   "integrity" "sha512-/qtoeqXgZ4Mg6LRg/gDUZQrFpOlOdHrol/vQYMnKu3aN3bP90UfOUB3QSDghUUK7OISAJ0xp8Ld78aHyCTcKCQ=="
   "resolved" "https://registry.npmjs.org/@nuxtjs/proxy/-/proxy-2.1.0.tgz"
@@ -3286,6 +3293,11 @@
   "integrity" "sha512-G9pEH1UUMxShy6syWk01VQSRVs3CDWtlxtZu7A+NyqjxaCA4gSlWAKDBx6QiUEKezqS8+DUlXLI14Fp05Hmpwg=="
   "resolved" "https://registry.npmjs.org/defu/-/defu-2.0.4.tgz"
   "version" "2.0.4"
+
+"defu@^3.2.2":
+  "integrity" "sha512-8UWj5lNv7HD+kB0e9w77Z7TdQlbUYDVWqITLHNqFIn6khrNHv5WQo38Dcm1f6HeNyZf0U7UbPf6WeZDSdCzGDQ=="
+  "resolved" "https://registry.npmjs.org/defu/-/defu-3.2.2.tgz"
+  "version" "3.2.2"
 
 "defu@^4.0.1":
   "integrity" "sha512-lC+G0KvvWRbisQa50+iFelm3/eMmwo4IlBmfASOVlw9MZpHHyQeVsZxc5j23+TQy5ydgEoTVSrWl7ptou1kzJQ=="

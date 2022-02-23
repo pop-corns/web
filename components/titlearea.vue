@@ -40,7 +40,7 @@
                 data-wow-duration="1s"
                 data-wow-delay="0.5s"
               >
-                <img v-parallax="0.2" :src="heroimage" alt="" />
+                <img v-if="!$device.isMobile" v-parallax="0.2" :src="heroimage" alt="" />
               </div>
             </div>
           </div>
