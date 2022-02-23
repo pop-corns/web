@@ -7,7 +7,7 @@
             <h4>
               ⚡️ Waitlist ⚡️
             </h4>
-            <p style="color: #fff; font-size: 1rem; text-align: center;">
+            <p v-if="!$device.isMobile" style="color: #fff; font-size: 1rem; text-align: center;">
               Popcorns is still under development. The next phase will be a closed Beta. You will receive a personal invitation for the closed Beta by joining the Waitlist.
             </p>
           </div>
