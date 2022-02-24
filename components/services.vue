@@ -22,7 +22,7 @@ Popcorns empower product people by helping them focus on the problems worth solv
           :key="index"
           style="z-index: 1"
           :style="$device.isMobile ? `padding-bottom : 20px`: ''"
-          class="col-lg-3 animate__faster"
+          class="col-lg-3"
           :class="[animation, `animate__delay-${index * 1}s`]"
         >
           <div class="service-item" style="height: 100%">
@@ -58,7 +58,7 @@ export default {
   methods: {
     visibilityChanged(isVisible) {
       if (isVisible) {
-        this.animation = "animate__animated animate__fadeInUp";
+        this.animation = "animate__animated animate__pulse";
       } else {
         this.animation = "";
       }

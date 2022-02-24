@@ -6,7 +6,7 @@
 // <script>
 import { createClient } from "~/plugins/contentful.js";
 import "animate.css";
-
+mixpanel.track("Test");
 const client = createClient();
 export default {
   asyncData() {

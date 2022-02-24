@@ -1,16 +1,11 @@
 <template>
-  <div
-    class="main-banner"
-    id="top"
-  >
+  <div class="main-banner" id="top">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <div class="row">
             <div class="col-lg-6 align-self-center">
-              <div
-                class="left-content show-up header-text"
-              >
+              <div class="left-content show-up header-text">
                 <div class="row">
                   <div class="col-lg-12">
                     <h2>
@@ -40,7 +35,12 @@
                 data-wow-duration="1s"
                 data-wow-delay="0.5s"
               >
-                <img v-if="!$device.isMobile" v-parallax="0.2" :src="heroimage" alt="" />
+                <img
+                  v-if="!$device.isMobile"
+                  v-parallax="0.2"
+                  :src="heroimage"
+                  alt=""
+                />
               </div>
             </div>
           </div>

@@ -75,6 +75,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    vendor: ["~/assets/js/owl-carousel.js", "~/assets/js/imagesloaded.js", "https://www.googletagmanager.com/gtag/js?id=G-KJVDY1VBPB"]
+    vendor: ["~/assets/js/owl-carousel.js", "~/assets/js/imagesloaded.js"]
   }
 }

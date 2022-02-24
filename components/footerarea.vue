@@ -50,6 +50,7 @@
 </template>
 <script>
 import qs from 'qs';
+
 export default {
   data() {
     return {
@@ -66,6 +67,7 @@ export default {
           "Content-Type": "application/x-www-form-urlencoded"
         }
       }).then(() => {
+        this.track("Event", {name: "subscribe"});
         this.email = "";
       });
     }
