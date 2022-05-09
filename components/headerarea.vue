@@ -31,8 +31,8 @@
               </li>
               <li>
                 <div class="green-button">
-                  <a href="#subscribe"
-                    ><i class="fa fa-sign-in-alt"></i> Join Waitlist</a
+                  <a href="https://app.popcorns.io"
+                    ><i class="fa fa-sign-in-alt"></i> Get Started</a
                   >
                 </div>
               </li>

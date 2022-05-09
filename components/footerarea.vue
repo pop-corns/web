@@ -1,7 +1,7 @@
 <template>
   <footer id="subscribe">
     <div class="container">
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading">
             <h4>
@@ -38,7 +38,7 @@
             </div>
           </form>
         </div>
-      </div>
+      </div> -->
       <div class="col-lg-12">
         <div class="copyright-text">
           <p>Copyright © 2022 Popcorns</p>
