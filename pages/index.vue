@@ -32,6 +32,7 @@ export default {
       }),
     ])
       .then(([welcomemessaging, services, aboutus]) => {
+        // debugger;
         return {
           welcome: welcomemessaging.items[0].fields,
           heroimage: welcomemessaging.includes.Asset[0].fields.file.url,

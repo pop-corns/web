@@ -23,10 +23,9 @@ Popcorns empower product people by helping them focus on the problems worth solv
           style="z-index: 1"
           :style="$device.isMobile ? `padding-bottom : 20px`: ''"
           class="col-lg-3"
-          :class="[animation, `animate__delay-${index * 1}s`]"
         >
           <div class="service-item" style="height: 100%">
-            <i :class="service.fields.icon" aria-hidden="true"></i>
+            <img v-if="service.fields.image" :src="service.fields.image.fields.file.url" class="image" aria-hidden="true" />
             <h4>{{ service.fields.title }}</h4>
             <p>
               {{ service.fields.subtitle }}
@@ -42,6 +41,14 @@ Popcorns empower product people by helping them focus on the problems worth solv
     </div>
   </div>
 </template>
+<style scoped>
+.image {
+  width: 200px;
+  height: auto;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+</style>
 <script>
 export default {
   data() {
