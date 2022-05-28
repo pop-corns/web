@@ -2,6 +2,7 @@
   <div>
     <titlearea
       :title="welcome.title"
+      :strings="welcome.strings"
       :subtitle="welcome.subtitle"
       :ctabuttons="welcome.ctas"
       :heroimage="heroimage"

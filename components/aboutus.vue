@@ -15,10 +15,11 @@
               </div>
             </div>
             <div class="col-lg-12">
-              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor idunte ut labore et dolore adipiscing magna.</p> -->
-              <div class="green-button" style="padding-top: 25px;">
-                <a href="#subscribe">Join Waitlist</a>
-              </div>
+                <div class="green-button" style="padding-top: 25px;">
+                  <a href="https://app.popcorns.io"
+                    ><i class="fa fa-sign-in-alt"></i> Get Started</a
+                  >
+                </div>
             </div>
           </div>
         </div>

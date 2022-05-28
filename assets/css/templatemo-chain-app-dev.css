@@ -259,7 +259,7 @@ body {
 
 .section-heading h4 em {
   font-style: normal;
-  color: #21e297;
+  color: #eb568a;
 }
 
 .section-heading img {
@@ -1753,15 +1753,19 @@ Footer Style
 --------------------------------------------- 
 */
 
-footer {
-  background-image: url(../images/footer-bg.png);
+ footer {
+  /* background-image: url(../images/footer-bg.png); */
+  border-top: solid 2px #b02d59;
+  /* background-image: linear-gradient(180deg, #f5407c, #e85485); */
+  background-color: #e85485;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 130px;
-  padding-top: 300px;
-  padding-bottom: 60px;
-}
+  margin-top: 150px;
+  padding-top: 10px;
+  padding-bottom: 70px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
 
 footer .section-heading {
   margin-bottom: 45px;

@@ -1,6 +1,8 @@
 <template>
   <footer id="subscribe">
-    <div class="container">
+    <div class="container"></div>
+    <div class="main"></div>
+    <div class="footer">
       <!-- <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading">
@@ -42,35 +44,48 @@
       <div class="col-lg-12">
         <div class="copyright-text">
           <p>Copyright © 2022 Popcorns</p>
-          <p><a href="#">Terms of Use</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Privacy Policy</a>   </p>
+          <p>
+            <a href="#">Terms of Use</a
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+              href="#"
+              >Privacy Policy</a
+            >
+          </p>
         </div>
       </div>
     </div>
   </footer>
 </template>
+
 <script>
-import qs from 'qs';
+import qs from "qs";
 
 export default {
   data() {
     return {
-        email: ""
-    }
+      email: "",
+    };
   },
   methods: {
-    subscrie(){
+    subscrie() {
       const reqBody = qs.stringify({
-        "email": this.email
+        email: this.email,
       });
-      this.$axios.post("https://forms.hubspot.com/uploads/form/v2/25590093/fea8eb6e-40d0-4b8b-954c-ccd7774f3944", reqBody, {
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded"
-        }
-      }).then(() => {
-        this.track("Event", {name: "subscribe"});
-        this.email = "";
-      });
-    }
-  }
+      this.$axios
+        .post(
+          "https://forms.hubspot.com/uploads/form/v2/25590093/fea8eb6e-40d0-4b8b-954c-ccd7774f3944",
+          reqBody,
+          {
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+          }
+        )
+        .then(() => {
+          this.track("Event", { name: "subscribe" });
+          this.email = "";
+        });
+    },
+  },
 };
 </script>

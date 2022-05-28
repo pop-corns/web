@@ -48,6 +48,7 @@ export default {
     '~/plugins/bootstrap.js',
     '~/plugins/visibility.js',
     '~/plugins/parallax.js',
+    '~/plugins/vue-typer.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

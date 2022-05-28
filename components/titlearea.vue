@@ -10,6 +10,9 @@
                   <div class="col-lg-12">
                     <h2>
                       {{ title }}
+                      <vue-typer
+                        :text="stringsArr"
+                      ></vue-typer>
                     </h2>
                     <p>
                       {{ subtitle }}
@@ -49,10 +52,19 @@
     </div>
   </div>
 </template>
+<style scoped>
+.caret .custom {
+  color: red;
+}
+</style>
 <script>
 export default {
   props: {
     title: {
+      type: String,
+      required: true,
+    },
+    strings: {
       type: String,
       required: true,
     },
@@ -67,6 +79,17 @@ export default {
     heroimage: {
       type: String,
       required: true,
+    },
+  },
+  computed: {
+    stringsArr: {
+      get() {
+        let strings = this.strings.split(",");
+        strings = strings.map(string => {
+          return string.trim();
+        });
+        return strings;
+      },
     },
   },
 };
