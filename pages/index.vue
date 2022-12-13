@@ -7,7 +7,8 @@
       :ctabuttons="welcome.ctas"
       :heroimage="heroimage"
     ></titlearea>
-    <services :services="services"></services>
+    <benefits :benefits="benefits"></benefits>
+    <services :services="services" :heading="servicesheading"></services>
     <aboutus :aboutus="aboutus"></aboutus>
   </div>
 </template>
@@ -31,18 +32,27 @@ export default {
         content_type: "aboutus",
         order: "fields.order",
       }),
+      client.getEntries({
+        content_type: "headings",
+        order: "-sys.createdAt",
+      }),
+      client.getEntries({
+        content_type: "benefits",
+        order: "fields.order",
+      }),
     ])
-      .then(([welcomemessaging, services, aboutus]) => {
+      .then(([welcomemessaging, services, aboutus, headings, benefits]) => {
         // debugger;
         return {
           welcome: welcomemessaging.items[0].fields,
           heroimage: welcomemessaging.includes.Asset[0].fields.file.url,
           services: services.items,
           aboutus: aboutus.items,
+          servicesheading: headings.items.find(heading => heading.fields.ref == "Services Heading").fields,
+          benefits: benefits.items
         };
       })
       .catch(console.error);
   },
-
 };
 </script>

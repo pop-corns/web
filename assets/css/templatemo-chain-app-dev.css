@@ -1755,7 +1755,7 @@ Footer Style
 
  footer {
   /* background-image: url(../images/footer-bg.png); */
-  border-top: solid 2px #b02d59;
+  border-top: solid 4px #b02d59;
   /* background-image: linear-gradient(180deg, #f5407c, #e85485); */
   background-color: #e85485;
   background-position: center top;
