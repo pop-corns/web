@@ -62,8 +62,90 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     'bootstrap-vue/nuxt',
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    ['nuxt-cookie-control', {
+      barPosition: 'bottom-full',
+      controlButton: false,
+      colors: {
+        barTextColor: '#fff',
+        modalOverlay: '#000',
+        barBackground: '#000',
+        barButtonColor: '#000',
+        modalTextColor: '#000',
+        modalBackground: '#fff',
+        modalOverlayOpacity: 0.8,
+        modalButtonColor: '#fff',
+        modalUnsavedColor: '#fff',
+        barButtonHoverColor: '#fff',
+        barButtonBackground: '#fff',
+        modalButtonHoverColor: '#fff',
+        modalButtonBackground: '#000',
+        controlButtonIconColor: '#000',
+        controlButtonBackground: '#fff',
+        barButtonHoverBackground: '#22e297',
+        checkboxActiveBackground: '#000',
+        checkboxInactiveBackground: '#000',
+        modalButtonHoverBackground: '#333',
+        checkboxDisabledBackground: '#ddd',
+        controlButtonIconHoverColor: '#fff',
+        controlButtonHoverBackground: '#000',
+        checkboxActiveCircleBackground: '#fff',
+        checkboxInactiveCircleBackground: '#fff',
+        checkboxDisabledCircleBackground: '#fff',
+      },
+      text: {
+        barTitle: 'Cookie Policy',
+        barDescription: 'We use cookies to ensure you get the best experience on our website. Learn more on our ',
+        acceptAll: 'Accept all',
+        declineAll: 'Delete all',
+        manageCookies: 'Manage cookies',
+        unsaved: 'You have unsaved settings',
+        close: 'Close',
+        save: 'Save',
+        necessary: 'Necessary cookies',
+        optional: 'Optional cookies',
+        functional: 'Functional cookies',
+        blockedIframe: 'To see this, please enable functional cookies',
+        here: 'here'
+      }
+    }],
   ],
+
+  cookies: {
+    necessary: [
+      {
+        name: {
+          en: "Default cookies",
+        },
+
+        description: {
+          en: "These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as configuring your cookie preferences, logging in or filling in forms."
+        },
+      }
+    ],
+    optional: [
+      {
+        name: {
+          en: "Analytics",
+        },
+        description: {
+          en:
+            "These cookies help us understand how visitors use our website, enabling us to improve and optimize it."
+        },
+        src: "https://www.googletagmanager.com/gtag/js?id=UA-138616567-1",
+        async: true,
+        cookies: ["_ga", "_gat_gtag_UA_138616567_1", "_gid"],
+        accepted: () => {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag("js", new Date());
+          gtag("config", "UA-138616567-1");
+        }
+      }
+    ]
+  },
 
   // module: {
   //   rules: [
