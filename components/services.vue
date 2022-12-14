@@ -69,9 +69,6 @@ export default {
       required: true,
     },
   },
-  created() {
-    console.log(JSON.stringify(this.heading))
-  },
   methods: {
     visibilityChanged(isVisible) {
       if (isVisible) {
