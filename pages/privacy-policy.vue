@@ -215,6 +215,7 @@ h2 {
 }
 p {
   color: var(--bs-body-color);
+  padding-bottom: 10px;
 }
 </style>
 

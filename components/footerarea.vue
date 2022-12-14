@@ -45,9 +45,9 @@
         <div class="copyright-text">
           <p>Copyright © 2022 Popcorns</p>
           <p>
-            <a href="#">Terms of Use</a
+            <a href="/terms-and-conditions">Terms and Conditions</a
             >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
-              href="#"
+              href="/privacy-policy"
               >Privacy Policy</a
             >
           </p>
