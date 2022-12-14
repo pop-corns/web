@@ -122,10 +122,10 @@
     </p>
 
     <p>
-      Anyone may link to our home page as long as the link: (a) is
-      not in any way deceptive; (b) does not falsely imply sponsorship,
-      endorsement or approval of the linking party and its products or services;
-      and (c) fits within the context of the linking party’s site.
+      Anyone may link to our home page as long as the link: (a) is not in any
+      way deceptive; (b) does not falsely imply sponsorship, endorsement or
+      approval of the linking party and its products or services; and (c) fits
+      within the context of the linking party’s site.
     </p>
 
     <p>
@@ -191,23 +191,21 @@
       use of this website. Nothing in this disclaimer will:
     </p>
 
-    <ul>
-      <li>
-        limit or exclude our or your liability for death or personal injury;
-      </li>
-      <li>
-        limit or exclude our or your liability for fraud or fraudulent
-        misrepresentation;
-      </li>
-      <li>
-        limit any of our or your liabilities in any way that is not permitted
-        under applicable law; or
-      </li>
-      <li>
-        exclude any of our or your liabilities that may not be excluded under
-        applicable law.
-      </li>
-    </ul>
+    <p>
+      - limit or exclude our or your liability for death or personal injury;
+    </p>
+    <p>
+      - limit or exclude our or your liability for fraud or fraudulent
+      misrepresentation;
+    </p>
+    <p>
+      - limit any of our or your liabilities in any way that is not permitted
+      under applicable law; or
+    </p>
+    <p>
+      - exclude any of our or your liabilities that may not be excluded under
+      applicable law.
+    </p>
 
     <p>
       The limitations and prohibitions of liability set in this Section and
