@@ -17,7 +17,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Popcorns',
+    title: 'Popcorns helps product teams run productive meetings',
     htmlAttrs: {
       lang: 'en'
     },
@@ -117,10 +117,10 @@ export default {
         name: {
           en: "Default cookies",
         },
-
         description: {
           en: "These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as configuring your cookie preferences, logging in or filling in forms."
         },
+        cookies: ['cookie_control_consent', 'cookie_control_enabled_cookies']
       }
     ],
     optional: [

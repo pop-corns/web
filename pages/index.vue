@@ -7,17 +7,20 @@
       :ctabuttons="welcome.ctas"
       :heroimage="heroimage"
     ></titlearea>
-    <benefits :benefits="benefits"></benefits>
     <services :services="services" :heading="servicesheading"></services>
+    <cta></cta>
+    <!-- <benefits :benefits="benefits"></benefits> -->
     <aboutus :aboutus="aboutus"></aboutus>
   </div>
 </template>
 <script>
 import { createClient } from "~/plugins/contentful.js";
 import "animate.css";
+import cta from '../components/cta.vue';
 
 const client = createClient();
 export default {
+  components: { cta },
   asyncData() {
     return Promise.all([
       client.getEntries({
@@ -42,15 +45,19 @@ export default {
       }),
     ])
       .then(([welcomemessaging, services, aboutus, headings, benefits]) => {
-        // debugger;
-        return {
-          welcome: welcomemessaging.items[0].fields,
+        let marketingContent = {
           heroimage: welcomemessaging.includes.Asset[0].fields.file.url,
           services: services.items,
           aboutus: aboutus.items,
           servicesheading: headings.items.find(heading => heading.fields.ref == "Services Heading").fields,
           benefits: benefits.items
         };
+
+        if(welcomemessaging.items.length > 0){
+          marketingContent.welcome = welcomemessaging.items[0].fields;
+        }
+
+        return marketingContent;
       })
       .catch(console.error);
   },

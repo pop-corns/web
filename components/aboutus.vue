@@ -25,8 +25,8 @@
         </div>
         <div class="col-lg-6">
           <div class="right-image">
-            <img v-if="$device.isDesktop" v-parallax="0.1" src="~/assets/images/about-right-dec.png" alt="">
-            <img v-else src="~/assets/images/about-right-dec.png" alt="">
+            <img v-if="$device.isDesktop" v-parallax="0.1" src="~/assets/images/about-right-dec.svg" alt="">
+            <img v-else src="~/assets/images/about-right-dec.svg" alt="">
           </div>
         </div>
       </div>

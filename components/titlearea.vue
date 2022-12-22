@@ -10,9 +10,7 @@
                   <div class="col-lg-12">
                     <h2>
                       {{ title }}
-                      <vue-typer
-                        :text="stringsArr"
-                      ></vue-typer>
+                      <vue-typer v-if="stringsArr && stringsArr.length > 0" :text="stringsArr"></vue-typer>
                     </h2>
                     <p>
                       {{ subtitle }}
@@ -67,6 +65,7 @@ export default {
     strings: {
       type: String,
       required: true,
+      default: ""
     },
     subtitle: {
       type: String,
@@ -84,11 +83,13 @@ export default {
   computed: {
     stringsArr: {
       get() {
-        let strings = this.strings.split(",");
-        strings = strings.map(string => {
-          return string.trim();
-        });
-        return strings;
+        if (this.strings.length > 0) {
+          let strings = this.strings.split(",");
+          strings = strings.map((string) => {
+            return string.trim();
+          });
+          return strings;
+        }
       },
     },
   },

@@ -31,7 +31,7 @@
               :v-for="(ben, index) in benefit.fields.description.content"
               :key="index"
             >
-              <p>{{ ben }}</p>
+              <p v-if="ben">{{ ben }}</p>
             </li>
           </ul>
         </div>
@@ -42,6 +42,11 @@
     </div>
   </div>
 </template>
+<style scoped>
+.benefits {
+  padding-top: 60px;
+}
+</style>
 <script>
 export default {
   props: {

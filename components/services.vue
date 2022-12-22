@@ -51,6 +51,10 @@
   padding-bottom: 20px;
   display: inline-block;
 }
+h4 {
+  text-align: center;
+  padding-top: 60px;
+}
 </style>
 <script>
 export default {
